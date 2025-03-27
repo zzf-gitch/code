@@ -1,0 +1,45 @@
+{
+  "name": "code",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --open",
+    "build": "vue-cli-service build",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
+  },
+  "main": "background.js",
+  "dependencies": {
+    "axios": "^1.2.1",
+    "core-js": "^3.6.5",
+    "element-plus": "^2.2.27",
+    "face-api.js": "^0.22.2",
+    "md5": "^2.3.0",
+    "sm-crypto": "^0.3.13",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0-0",
+    "vue3-scroll-seamless": "^1.0.6",
+    "vuex": "^4.0.0-0",
+    "wavesurfer.js": "^7.8.8"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "electron": "^13.6.9",
+    "electron-devtools-installer": "^3.1.0",
+    "node-sass": "^6.0.1",
+    "qs": "^6.11.0",
+    "sass-loader": "^10.2.0",
+    "vue-cli-plugin-electron-builder": "~2.1.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

@@ -2,10 +2,10 @@ module.exports = {
     devServer: {
         proxy: {
             '/api': {
-                target: 'http://api.fanyi.baidu.com/',
+                target: 'https://fanyi-api.baidu.com/',
                 // target: 'https://tucdn.wpon.cn',
                 changeOrigin: true,
-                // secure: false,
+                secure: false,
                 pathRewrite: {
                     "^/api": ""
                 }

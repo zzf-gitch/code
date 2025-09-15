@@ -89,8 +89,8 @@ const classarr = ref([
     id: 4
   }
 ])
-const searchKey = ref('A3H33gCd9A1Gi27NBV8V')
-const appid = ref('20221220001502964')
+const searchKey = ref('Vr_b8i4TAeGH2XIJtRvh') // 密钥
+const appid = ref('20221220001502937') // APP ID
 const salt = new Date().getTime()
 const Search = async () => {
   Loading.value = true
